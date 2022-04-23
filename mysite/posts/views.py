@@ -16,4 +16,9 @@ def group_posts(request):
     template = 'posts/group_list.html'
     return render(request, template)
 
+def spiski(request):
+    context = {"names":["Рома", "Коля", "Вася", "Петя", "Маша"],}
+
+    template = 'posts/spiski.html'
+    return render(request, template, context)
 

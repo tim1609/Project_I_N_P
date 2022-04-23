@@ -75,25 +75,5 @@
         </article>
         <!-- под последним постом нет линии -->
 
-
-<style>
-  b {color:red}
-
-</style>
-
-
-      {% for i in names %}
-      {% if forloop.first %}
-        <p>Начало цикла</p>
-      {% endif %}
-   <b> <ul> <li>{{ i }}</li> </ul> </b>
-      {# forloop хранит счётчик цикла и может определять разные состояния счётчика #}
-      {% if forloop.last %}
-        <p>Конец цикла</p>
-      {% endif %}
-      {% empty %}
-      <p>Если цикл пуст</p>
-      {% endfor %}
-
       </div>
   {% endblock %}
