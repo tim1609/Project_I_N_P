@@ -1,4 +1,6 @@
 from django.contrib import admin
-# Из модуля models импортируем модель Post
-from .models import Post
+
+from .models import Group, Post
+
 admin.site.register(Post)
+admin.site.register(Group)
